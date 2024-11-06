@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شات عام</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>شات عام - اكتب و انشر المقالات</h1>
+        <p>تجدر كتابة المقالات ومشاركتها مع الجميع هنا.</p>
+    </header>
+
+    <main>
+        <section id="postsContainer"></section>
+        
+        <template id="postTemplate">
+            <div class="post">
+                <input type="text" class="userName" placeholder="اسمك لو سمحت" />
+                <textarea class="postContent" placeholder="اكتب المقال هنا" maxlength="1000"></textarea>
+                <div class="post-buttons">
+                    <button class="publishBtn">نشر</button>
+                    <button class="deleteBtn">حذف</button>
+                </div>
+            </div>
+        </template>
+
+        <button id="addPostBtn">إضافة مقال جديد</button>
+        <button id="viewPublishedPostsBtn">المقالات المنشورة من الجميع</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
